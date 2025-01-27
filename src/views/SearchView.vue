@@ -109,7 +109,7 @@ const loadMoreItems = () => {
           <div
             class="relative w-8 h-4 bg-neutral-200 rounded-full dark:bg-neutral-700 after:content-[''] after:absolute after:top-[0px] after:start-[0px] after:bg-neutral-100 after:border-neutral-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-neutral-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-neutral-100 peer-checked:bg-neutral-600 dark:peer-checked:bg-neutral-600">
           </div>
-          <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Show all TLDs</span>
+          <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Show all extensions</span>
         </label>
       </form>
       <hr class="w-full h-px bg-neutral-200 border-0 dark:bg-neutral-700">
