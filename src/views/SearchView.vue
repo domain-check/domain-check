@@ -30,7 +30,7 @@ onMounted(async () => {
   bookmarkedTlds.value = await db.getAll('tlds');
 
   window.onscroll = () => {
-    let bottomOfWindow = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop) + window.innerHeight === document.documentElement.offsetHeight
+    let bottomOfWindow = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop) + window.innerHeight + 32 >= document.documentElement.offsetHeight
     if (bottomOfWindow) {
       loadMoreItems();
     }
