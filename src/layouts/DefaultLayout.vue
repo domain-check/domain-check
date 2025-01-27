@@ -2,6 +2,7 @@
 import DarkModeSwitch from '@/components/DarkModeSwitch.vue';
 import BurgerIcon from '@/icons/BurgerIcon.vue';
 import CloseIcon from '@/icons/CloseIcon.vue';
+import GithubIcon from '@/icons/GithubIcon.vue';
 import router from '@/router';
 import { ref } from 'vue';
 
@@ -65,10 +66,13 @@ const showMobileMenu = ref(false);
       <DarkModeSwitch />
     </div>
 
-    <footer class="fixed bottom-0 w-full bg-neutral-200 text-neutral-900 text-center p-2 text-sm">
-      <p class="text-right">
-        <a href="https://github.com/domain-check/domain-check.github.io" target="_blank" class="hover:underline">GitHub</a>
-      </p>
+    <footer class="flex fixed bottom-0 w-full h-8 px-4 bg-neutral-200  dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100">
+      <div class="flex w-full justify-end self-center">
+        <a href="https://github.com/domain-check/domain-check.github.io" target="_blank" class="flex items-center text-sm gap-1">
+          <GithubIcon class="w-5 h-5"></GithubIcon>
+          <div>GitHub</div>
+        </a>
+      </div>
     </footer>
   </div>
 </template>
