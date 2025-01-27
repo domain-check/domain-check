@@ -1,0 +1,60 @@
+{
+  "id": "DomainCheck",
+  "name": "Domain Check",
+  "short_name": "DomainCheck",
+  "start_url": "/",
+  "scope": "/",
+  "description": "DomainCheck is a simple web application for tracking domains",
+  "display": "standalone",
+  "theme_color": "#ede7e1",
+  "background_color": "#121212",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-1844x770.png",
+      "sizes": "1844x770",
+      "type": "image/jpg",
+      "platform": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Search",
+      "url": "/"
+    },
+    {
+      "name": "Bookmarks",
+      "url": "/#/bookmarks"
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "auto"
+  }
+}
