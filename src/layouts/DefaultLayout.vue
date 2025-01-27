@@ -45,11 +45,11 @@ const showMobileMenu = ref(false);
       </h1>
     </div>
     <main :class="{ 'block': !showMobileMenu, 'hidden': showMobileMenu }"
-      class="px-4 py-2 max-w-lg w-full text-neutral-900 dark:text-neutral-100">
+      class="px-4 py-2 flex-1 max-w-lg w-full text-neutral-900 dark:text-neutral-100">
       <slot />
     </main>
     <div :class="{ 'block': showMobileMenu, 'hidden': !showMobileMenu }"
-      class="px-4 py-2 flex flex-col gap-12 items-center text-neutral-900 dark:text-neutral-100">
+      class="px-4 py-2 flex-1 flex flex-col gap-12 items-center text-neutral-900 dark:text-neutral-100">
       <RouterLink :to="{ name: 'Search' }"
         :class="{ 'border-b-2 border-neutral-900 dark:border-neutral-100': router.currentRoute.value.name === 'Search' }"
         class="font-medium text-lg text-neutral-900 dark:text-neutral-100">
@@ -64,5 +64,11 @@ const showMobileMenu = ref(false);
         Extensions</RouterLink>
       <DarkModeSwitch />
     </div>
+
+    <footer class="fixed bottom-0 w-full bg-neutral-200 text-neutral-900 text-center p-2 text-sm">
+      <p class="text-right">
+        <a href="https://github.com/domain-check/domain-check.github.io" target="_blank" class="hover:underline">GitHub</a>
+      </p>
+    </footer>
   </div>
 </template>
