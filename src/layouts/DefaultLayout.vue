@@ -46,7 +46,7 @@ const showMobileMenu = ref(false);
       </h1>
     </div>
     <main :class="{ 'block': !showMobileMenu, 'hidden': showMobileMenu }"
-      class="px-4 py-2 flex-1 max-w-lg w-full text-neutral-900 dark:text-neutral-100">
+      class="px-4 py-2 max-w-lg w-full text-neutral-900 dark:text-neutral-100">
       <slot />
     </main>
     <div :class="{ 'block': showMobileMenu, 'hidden': !showMobileMenu }"
