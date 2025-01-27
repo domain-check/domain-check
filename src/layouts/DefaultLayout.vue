@@ -46,7 +46,7 @@ const showMobileMenu = ref(false);
       </h1>
     </div>
     <main :class="{ 'block': !showMobileMenu, 'hidden': showMobileMenu }"
-      class="px-4 py-2 max-w-lg w-full text-neutral-900 dark:text-neutral-100">
+      class="flex-1 px-4 py-2 max-w-lg w-full text-neutral-900 dark:text-neutral-100">
       <slot />
     </main>
     <div :class="{ 'block': showMobileMenu, 'hidden': !showMobileMenu }"
@@ -66,7 +66,7 @@ const showMobileMenu = ref(false);
       <DarkModeSwitch />
     </div>
 
-    <footer class="flex fixed bottom-0 w-full h-8 px-4 bg-neutral-200  dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100">
+    <footer class="flex w-full h-8 px-4 bg-neutral-200  dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100">
       <div class="flex w-full justify-end self-center">
         <a href="https://github.com/domain-check/domain-check.github.io" target="_blank" class="flex items-center text-sm gap-1">
           <GithubIcon class="w-5 h-5"></GithubIcon>
